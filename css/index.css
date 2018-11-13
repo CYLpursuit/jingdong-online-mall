@@ -1,0 +1,262 @@
+/*中间主体部分 start*/
+body{
+	background-color: rgb(240,243,239);
+}
+header{
+	background-color: rgb(255,100,0);	
+}
+img{
+	/*display:block;*//*消除图片上面留有空隙无法对齐的情况*/
+	vertical-align: top;/*消除图片上面留有空隙无法对齐的情况*/
+}
+.grid{
+	height: 480px;
+	display:flex;
+	justify-content: space-between;
+}
+.grid-col1{
+	width: 190px;
+	height: 100%;
+	background-color:#6e6568;
+	color:#fff;
+	font-size: 14px;/*不是给字的，是给反斜杠的*/
+	position: relative;
+}
+.grid-col1 a{
+	color:#fff;
+	font-size: 14px;/*是给链接文本字的*/
+	margin:0 3px;
+}
+.grid-col1 a:hover{
+	color:#f10215;
+}
+.grid-col1 ul{
+	padding: 10px 0;
+}
+.grid-col1 ul li{
+	padding-left:12px;
+	height: 26px;
+	line-height: 26px;
+}
+.grid-col1 ul li:hover{
+	background-color: #9c9698;
+}
+.grid-col2{
+	width: 790px;
+	height: 100%;
+}
+/*banner部分*/
+.grid-col2-b div{
+	float:left;
+	margin-top:10px;
+}
+.grid-col2-b div:last-child{
+	float:right;
+	margin-top:10px;
+}
+/*箭头部分*/
+.grid-col2-t{
+	position: relative;
+}
+.arrow-l,
+.arrow-r{
+	position:absolute;
+	top:50%;/*盒子在竖直方向垂直居中*/
+	transform: translateY(-50%);/*盒子在竖直方向垂直居中*/
+	width: 30px;
+	height: 60px;
+	background:rgba(0,0,0,0.3);
+	text-align: center;/*行内元素水平方向垂直居中*/
+	line-height: 60px;/*行内元素竖直方向垂直居中*/
+	font-size:20px;
+	font-family: arial;
+	color:rgba(255,255,255,.3);
+	font-weight:normal;
+}
+.arrow-r{
+	right: 0;
+}
+.circle{
+	width: 165px;
+	height: 20px;
+	background: rgba(255,255,255,.3);
+	position: absolute;
+	left:50%;
+	bottom:20px;
+	transform: translateX(-50%);
+	border-radius:10px;
+}
+.circle li{
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	border-radius:50%;
+	float:left;
+	margin:4px 4px 0;
+	box-sizing: border-box;
+	padding-left:3px;
+	cursor: pointer;
+}
+.circle .current{
+	background-color: #f10215;
+}
+.grid-col3{
+	width: 190px;
+	height: 100%;
+}
+/*右边模块*/
+.login{
+	height: 85px;
+	border-bottom: 1px solid #ccc;
+	padding: 15px;
+	background-color: #fff;
+}
+.login-t{
+	width: 95px;
+	height: 60px;
+	line-height: 20px;
+	font-size:12px;
+	white-space: nowrap;/*强制一行内显示*/
+	overflow:hidden;/*溢出隐藏*/
+	text-overflow: ellipsis;/*超出的部分显示省略号*/
+	color:#666;
+	padding-left: 60px;
+	position: relative;
+}
+.login-t a{
+	color:#666;
+}
+.login-t a:hover{
+	color:#f10512;
+}
+.login-t a:last-child{
+	position:absolute;
+	top:0;
+	left: 0;
+}
+.login-t a img{
+	border-radius:20px;
+}
+.login-b a{
+	display:inline-block;
+	width: 70px;
+	height: 20px;
+	border: 2px solid #f10215;
+	margin-left:3px;
+	text-align: center;
+	line-height: 20px;
+	color:#f10215;
+}
+.login-b a:hover{
+	background-color:#f10215 ;
+	color:#fff;
+}
+.news{
+	height: 155px;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+	padding:7px 13px 0;
+	box-sizing:border-box;
+}
+.news a{
+	color:black;
+}
+.news a:hover{
+	color:#f10215;
+}
+.news .news-t a:hover{
+	color:black;
+}
+.news .news-t a:last-child:hover{
+	color:#f10215;
+}
+.news-t{
+	height: 19px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.new-t a{
+	float:left;
+	height: 17px;
+	line-height: 17px;
+}
+.first{
+	padding-right:15px;
+	border-right:1px solid #ccc;
+}
+.second{
+	padding-left:15px;
+}
+.third{
+	padding-left:50px;
+}
+.moveline{
+	position:absolute;
+	top:18px;
+	left:0;
+	width: 30px;
+	height: 3px;
+	background-color: #f10215;
+	list-style: none;
+}
+.news-b ul{
+	padding-top:10px;
+}
+.news-b li{
+	height:25px;
+	line-height: 25px;
+}
+.expand{
+	height:209px;
+	overflow: hidden;
+	background-color:white;
+}
+.expand ul{
+	width:195px;
+}
+.expand li{
+	width: 47px;
+	height: 69px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	float:left;
+	font-size: 14px;
+}
+.expand li a{
+	display: block;
+	padding-top:15px;
+	text-align: center;
+}
+.expand li a i{
+	width: 22px;
+	height: 22px;
+	color: #554;
+	font-family: 'icomoon';
+	font-weight: normal;
+	font-style: normal;
+	font-size:20px;
+}
+.expand li a span{
+	display:block;
+	margin-top: 5px;
+}
+/*中间主体部分 end
+/*广告部分 start*/
+.adsl{
+	width: 205px;
+	height: 480px;
+	position: absolute;
+	top: 0;
+	left: -207px;
+}
+.adsl:hover{
+
+}
+.adsr{
+	width: 205px;
+	height: 480px;
+	position: absolute;
+	top: 0;
+	right: -1202px;
+}
+/*广告部分 end*/
